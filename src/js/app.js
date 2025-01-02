@@ -1,7 +1,7 @@
 import heroes from './heroes.js'; 
 
-const sortHeroes = (heroesArray) => {
-  const sortedHeroes = heroesArray.sort((a, b) => b.health - a.health);
+const sortHeroes = () => {
+  const sortedHeroes = heroes.sort((a, b) => b.health - a.health);
 
   console.log('Отсортированный спиок героев по здоровью):');
   sortedHeroes.forEach(hero => {
