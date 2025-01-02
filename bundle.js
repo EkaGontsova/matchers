@@ -1,1 +1,0 @@
-(()=>{"use strict";console.log([{name:"мечник",health:10},{name:"маг",health:100},{name:"лучник",health:80}].sort((function(e,h){return h.health-e.health})))})();
