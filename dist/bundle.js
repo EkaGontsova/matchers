@@ -1,0 +1,1 @@
+(()=>{"use strict";var a;a=[{name:"мечник",health:10},{name:"маг",health:100},{name:"лучник",health:80}].sort((function(a,e){return e.health-a.health})),console.log("Отсортированный спиок героев по здоровью):"),a.forEach((function(a){console.log("Имя: ".concat(a.name,", Здоровье: ").concat(a.health))}))})();
