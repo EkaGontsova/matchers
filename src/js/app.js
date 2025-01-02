@@ -1,16 +1,9 @@
-import heroes from './heroes.js'; 
+import heroes from "./sort_heroes";
 
-const sortHeroes = () => {
-  const sortedHeroes = heroes.sort((a, b) => b.health - a.health);
-
-  console.log('Отсортированный спиок героев по здоровью):');
-  sortedHeroes.forEach(hero => {
-    console.log(`Имя: ${hero.name}, Здоровье: ${hero.health}`);
-  });
-
-  return sortedHeroes; 
-};
-
-export default sortHeroes;
-
-sortHeroes(heroes);
+console.log(
+  heroes([
+    { name: "мечник", health: 10 },
+    { name: "маг", health: 100 },
+    { name: "лучник", health: 80 },
+  ])
+);
